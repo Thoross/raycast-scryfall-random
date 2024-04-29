@@ -3,6 +3,7 @@ import {
   formatOracleText,
   generateBottomRightDetails,
   generateCardNameMarkdown,
+  generateFlavorText,
   generateImageMarkdown,
 } from '../utils/textUtils'
 import { getSymbols } from '../utils/symbology'
@@ -27,6 +28,10 @@ const SingleFaced = ({ card, isLoading }: SingleFacedProps) => {
   ${generateBottomRightDetails(card)}
 
   ${card.oracle_text && formattedOracleText}
+
+  ----
+
+  ${generateFlavorText(card)}
   `
   }
   return <Base card={card} isLoading={isLoading} markdown={markdown} />

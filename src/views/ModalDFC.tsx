@@ -3,6 +3,7 @@ import {
   formatOracleText,
   generateBottomRightDetails,
   generateCardNameMarkdown,
+  generateFlavorText,
   generateImageMarkdown,
 } from '../utils/textUtils'
 import { getSymbols } from '../utils/symbology'
@@ -29,6 +30,8 @@ const ModalDFC = ({ card, isLoading }: ModalDFCProps) => {
 
   ${front.oracle_text && formatOracleText(front.oracle_text)}
 
+  ${generateFlavorText(front)}
+
   --------
 
   ${generateImageMarkdown(back.name, back.image_uris.normal)}
@@ -39,6 +42,8 @@ const ModalDFC = ({ card, isLoading }: ModalDFCProps) => {
   ${generateBottomRightDetails(back)}
 
   ${back.oracle_text && formatOracleText(back.oracle_text)}
+
+  ${generateFlavorText(back)}
     `
   }
 

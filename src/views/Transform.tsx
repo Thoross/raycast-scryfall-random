@@ -4,6 +4,7 @@ import {
   formatOracleText,
   generateBottomRightDetails,
   generateCardNameMarkdown,
+  generateFlavorText,
   generateImageMarkdown,
 } from '../utils/textUtils'
 import { getSymbols } from '../utils/symbology'
@@ -28,6 +29,8 @@ const Transform = ({ card, isLoading }: TransformProps) => {
   ${generateBottomRightDetails(front)}
 
   ${front.oracle_text && formatOracleText(front.oracle_text)}
+  
+  ${generateFlavorText(front)}
 
   ---
 
@@ -39,6 +42,8 @@ const Transform = ({ card, isLoading }: TransformProps) => {
   ${generateBottomRightDetails(back)}
 
   ${back.oracle_text && formatOracleText(back.oracle_text)}
+
+  ${generateFlavorText(back)}
     `
   }
   return <Base isLoading={isLoading} card={card} markdown={markdown} />

@@ -4,6 +4,7 @@ import {
   formatOracleText,
   generateBottomRightDetails,
   generateCardNameMarkdown,
+  generateFlavorText,
   generateImageMarkdown,
 } from '../utils/textUtils'
 import { getSymbols } from '../utils/symbology'
@@ -29,12 +30,16 @@ const Adventure = ({ card, isLoading }: AdventureProps) => {
 
   ${main.oracle_text ? formatOracleText(main.oracle_text) : ''}
 
+  ${generateFlavorText(main)}
+
   ----
 
   ${renderCardNameMarkdown(adventure)}
   ### ${adventure.type_line}
 
   ${adventure.oracle_text ? formatOracleText(adventure.oracle_text) : ''}
+
+  ${generateFlavorText(adventure)}
     `
   }
   return <Base card={card} isLoading={isLoading} markdown={markdown} />

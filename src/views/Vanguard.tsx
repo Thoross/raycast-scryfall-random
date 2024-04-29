@@ -1,6 +1,6 @@
 import { ScryfallCard } from '@scryfall/api-types'
 import Base from './Base'
-import { formatOracleText, generateImageMarkdown } from '../utils/textUtils'
+import { formatOracleText, generateFlavorText, generateImageMarkdown } from '../utils/textUtils'
 
 export interface VanguardProps {
   card: ScryfallCard.Vanguard
@@ -20,6 +20,8 @@ const Vanguard = ({ card, isLoading }: VanguardProps) => {
   Life total modifier: ${card.life_modifier}
 
   ${card.oracle_text ? formatOracleText(card.oracle_text) : ''}
+
+  ${generateFlavorText(card)}
     `
   }
   return <Base card={card} isLoading={isLoading} markdown={markdown} />

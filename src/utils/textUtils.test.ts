@@ -2,6 +2,7 @@ import { expect, describe, it } from 'vitest'
 import {
   generateBottomRightDetails,
   generateCardNameMarkdown,
+  generateFlavorText,
   generateImageMarkdown,
   replaceNewlines,
   replaceSymbols,
@@ -94,5 +95,22 @@ describe('generateCardNameMarkdown', () => {
   })
   it("doesn't replace symbols in string", () => {
     expect(renderCardName(testCard)).not.toContain('<img src="g?raycast-height=16&raycast-width=16" />')
+  })
+  it('returns a flavor name and a regular name', () => {
+    const flavorCard = { ...testCard, flavor_name: 'Flavor Name' }
+    const result = renderCardName(flavorCard)
+    expect(result).toContain('## Flavor Name <img src="foo?raycast-height=16&raycast-width=16" />')
+    expect(result).toContain('### *Test*')
+  })
+})
+
+describe('generateFlavorText', () => {
+  it('generates flavour text', () => {
+    const test = { ...normalCard, flavor_text: 'This is flavor text' }
+    expect(generateFlavorText(test)).toEqual('*This is flavor text*')
+  })
+  it('returns an empty string when no flavor_text', () => {
+    const test = { ...normalCard, flavor_text: undefined }
+    expect(generateFlavorText(test)).toEqual('')
   })
 })

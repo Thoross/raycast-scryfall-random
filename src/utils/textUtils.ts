@@ -33,11 +33,25 @@ export const generateImageMarkdown = (name: string, uri: string) =>
   `![${name}](${uri}&raycast-height=350&raycast-width=250)`
 
 export const generateCardNameMarkdown =
-  (symbols: Record<string, string>) => (card: ScryfallCard.AnySingleFaced | ScryfallCardFace.Any) =>
-    `## ${card.name} ${replaceSymbols(symbols, card.mana_cost)}`
+  (symbols: Record<string, string>) => (card: ScryfallCard.AnySingleFaced | ScryfallCardFace.Any) => {
+    if (card.flavor_name) {
+      return `
+  ## ${card.flavor_name} ${replaceSymbols(symbols, card.mana_cost)}
+  ### *${card.name}*
+      `
+    }
+    return `## ${card.name} ${replaceSymbols(symbols, card.mana_cost)}`
+  }
 
 export const generateBottomRightDetails = (card: ScryfallCardFace.Any | ScryfallCard.AnySingleFaced) =>
   `
 ${card.power && card.toughness ? `${card.power}/${card.toughness}` : ''}
 ${card.loyalty ? `Loyalty: ${card.loyalty}` : ''}
 `
+
+export const generateFlavorText = (card: ScryfallCardFace.Any | ScryfallCard.AnySingleFaced) => {
+  if (!card.flavor_text) {
+    return ''
+  }
+  return `*${card.flavor_text}*`
+}
