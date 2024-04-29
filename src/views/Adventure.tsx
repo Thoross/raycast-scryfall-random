@@ -15,13 +15,14 @@ export interface AdventureProps {
 
 const Adventure = ({ card, isLoading }: AdventureProps) => {
   const symbols = getSymbols()
+  const renderCardNameMarkdown = generateCardNameMarkdown(symbols)
   let markdown
   if (card) {
     const [main, adventure] = card.card_faces
     markdown = `
   ${generateImageMarkdown(main.name, card.image_uris.normal)}
 
-  ${generateCardNameMarkdown(symbols, main)}
+  ${renderCardNameMarkdown(main)}
   ### ${main.type_line}
 
   ${generateBottomRightDetails(main)}
@@ -30,7 +31,7 @@ const Adventure = ({ card, isLoading }: AdventureProps) => {
 
   ----
 
-  ${generateCardNameMarkdown(symbols, adventure)}
+  ${renderCardNameMarkdown(adventure)}
   ### ${adventure.type_line}
 
   ${adventure.oracle_text ? formatOracleText(adventure.oracle_text) : ''}

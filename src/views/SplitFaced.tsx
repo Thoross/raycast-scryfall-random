@@ -15,13 +15,14 @@ export interface SplitFacedProps {
 
 const SplitFaced = ({ card, isLoading }: SplitFacedProps) => {
   const symbols = getSymbols()
+  const renderCardNameMarkdown = generateCardNameMarkdown(symbols)
   let markdown
   const [front, back] = card.card_faces
   if (card) {
     markdown = `
   ${generateImageMarkdown(card.name, card.image_uris.normal)}
 
-  ${generateCardNameMarkdown(symbols, front)}
+  ${renderCardNameMarkdown(front)}
   ## ${front.type_line}
 
   ${generateBottomRightDetails(front)}
@@ -30,7 +31,7 @@ const SplitFaced = ({ card, isLoading }: SplitFacedProps) => {
 
   -----
 
-  ${generateCardNameMarkdown(symbols, back)}
+  ${renderCardNameMarkdown(back)}
   ## ${back.type_line}
 
   ${generateBottomRightDetails(back)}

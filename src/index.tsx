@@ -5,10 +5,12 @@ import { fetchCard } from './utils/api'
 import { showFailureToast } from '@raycast/utils'
 import SingleFaced from './views/SingleFaced'
 import SplitFaced from './views/SplitFaced'
-import { isAdventure, isCard, isMDFC, isSplit, isTransform } from './utils/type-guards'
+import { isAdventure, isCard, isFlip, isMDFC, isSplit, isTransform, isVanguard } from './utils/type-guards'
 import ModalDFC from './views/ModalDFC'
 import Transform from './views/Transform'
 import Adventure from './views/Adventure'
+import Flip from './views/Flip'
+import Vanguard from './views/Vanguard'
 
 interface CardArguments {
   query?: string
@@ -51,6 +53,12 @@ export default function Command(props: LaunchProps<{ arguments: CardArguments }>
     }
     case isAdventure(card): {
       return <Adventure card={card} isLoading={isLoading} />
+    }
+    case isFlip(card): {
+      return <Flip card={card} isLoading={isLoading} />
+    }
+    case isVanguard(card): {
+      return <Vanguard card={card} isLoading={isLoading} />
     }
     default:
       return <SingleFaced card={card as ScryfallCard.AnySingleFaced} isLoading={isLoading} />

@@ -2,7 +2,7 @@ import TurndownService from 'turndown'
 import { getSymbols } from '../utils/symbology'
 import { ScryfallCard, ScryfallCardFace } from '@scryfall/api-types'
 
-export const formatOracleText = (oracleText: string) => {
+export const formatOracleText = (oracleText: string | undefined) => {
   const symbols = getSymbols()
   if (oracleText) {
     const turndown = new TurndownService()
@@ -20,7 +20,7 @@ export const replaceSymbols = (symbols: Record<string, string>, text: string) =>
   const matches = text.match(/\{.*?\}/gm)
   matches?.forEach((match) => {
     const symbol = symbols[match]
-    replacement = replacement.replace(match, `<img src="${symbol}?raycast-height=14&raycast-width=14" />`)
+    replacement = replacement.replace(match, `<img src="${symbol}?raycast-height=16&raycast-width=16" />`)
   })
   return replacement
 }
@@ -32,10 +32,9 @@ export const replaceNewlines = (text: string) => {
 export const generateImageMarkdown = (name: string, uri: string) =>
   `![${name}](${uri}&raycast-height=350&raycast-width=250)`
 
-export const generateCardNameMarkdown = (
-  symbols: Record<string, string>,
-  card: ScryfallCard.AnySingleFaced | ScryfallCardFace.Any,
-) => `## ${card.name} ${replaceSymbols(symbols, card.mana_cost)}`
+export const generateCardNameMarkdown =
+  (symbols: Record<string, string>) => (card: ScryfallCard.AnySingleFaced | ScryfallCardFace.Any) =>
+    `## ${card.name} ${replaceSymbols(symbols, card.mana_cost)}`
 
 export const generateBottomRightDetails = (card: ScryfallCardFace.Any | ScryfallCard.AnySingleFaced) =>
   `

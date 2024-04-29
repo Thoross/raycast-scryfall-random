@@ -1,9 +1,9 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "scryfall-random",
-  "title": "Scryfall Random",
+  "title": "Scryfall Random Card",
   "description": "Returns a random Magic The Gathering card from Scryfall",
-  "icon": "command-icon.png",
+  "icon": "extension_icon.png",
   "author": "brendan_betts",
   "categories": [
     "Fun",
@@ -13,7 +13,7 @@
   "commands": [
     {
       "name": "index",
-      "title": "Get Random Card",
+      "title": "Get Random Card from Scryfall",
       "description": "Returns a random Magic The Gathering card from Scryfall",
       "mode": "view",
       "arguments": [

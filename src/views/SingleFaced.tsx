@@ -21,7 +21,7 @@ const SingleFaced = ({ card, isLoading }: SingleFacedProps) => {
     markdown = `
   ${generateImageMarkdown(card.name, card?.image_uris?.normal)}
 
-  ${generateCardNameMarkdown(symbols, card)}
+  ${generateCardNameMarkdown(symbols)(card)}
   ### ${card.type_line}
 
   ${generateBottomRightDetails(card)}

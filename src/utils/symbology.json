@@ -17,10 +17,7 @@
       "cmc": 0.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "ocT",
-        "oT"
-      ]
+      "gatherer_alternates": ["ocT", "oT"]
     },
     {
       "object": "card_symbol",
@@ -139,10 +136,7 @@
       "cmc": 0.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "oX",
-        "ooX"
-      ]
+      "gatherer_alternates": ["oX", "ooX"]
     },
     {
       "object": "card_symbol",
@@ -193,9 +187,7 @@
       "cmc": 0.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o0"
-      ]
+      "gatherer_alternates": ["o0"]
     },
     {
       "object": "card_symbol",
@@ -212,9 +204,7 @@
       "cmc": 0.5,
       "funny": true,
       "colors": [],
-      "gatherer_alternates": [
-        "o½"
-      ]
+      "gatherer_alternates": ["o½"]
     },
     {
       "object": "card_symbol",
@@ -231,9 +221,7 @@
       "cmc": 1.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o1"
-      ]
+      "gatherer_alternates": ["o1"]
     },
     {
       "object": "card_symbol",
@@ -250,9 +238,7 @@
       "cmc": 2.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o2"
-      ]
+      "gatherer_alternates": ["o2"]
     },
     {
       "object": "card_symbol",
@@ -269,9 +255,7 @@
       "cmc": 3.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o3"
-      ]
+      "gatherer_alternates": ["o3"]
     },
     {
       "object": "card_symbol",
@@ -288,9 +272,7 @@
       "cmc": 4.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o4"
-      ]
+      "gatherer_alternates": ["o4"]
     },
     {
       "object": "card_symbol",
@@ -307,9 +289,7 @@
       "cmc": 5.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o5"
-      ]
+      "gatherer_alternates": ["o5"]
     },
     {
       "object": "card_symbol",
@@ -326,9 +306,7 @@
       "cmc": 6.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o6"
-      ]
+      "gatherer_alternates": ["o6"]
     },
     {
       "object": "card_symbol",
@@ -345,9 +323,7 @@
       "cmc": 7.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o7"
-      ]
+      "gatherer_alternates": ["o7"]
     },
     {
       "object": "card_symbol",
@@ -364,9 +340,7 @@
       "cmc": 8.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o8"
-      ]
+      "gatherer_alternates": ["o8"]
     },
     {
       "object": "card_symbol",
@@ -383,9 +357,7 @@
       "cmc": 9.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o9"
-      ]
+      "gatherer_alternates": ["o9"]
     },
     {
       "object": "card_symbol",
@@ -402,9 +374,7 @@
       "cmc": 10.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o10"
-      ]
+      "gatherer_alternates": ["o10"]
     },
     {
       "object": "card_symbol",
@@ -421,9 +391,7 @@
       "cmc": 11.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o11"
-      ]
+      "gatherer_alternates": ["o11"]
     },
     {
       "object": "card_symbol",
@@ -440,9 +408,7 @@
       "cmc": 12.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o12"
-      ]
+      "gatherer_alternates": ["o12"]
     },
     {
       "object": "card_symbol",
@@ -459,9 +425,7 @@
       "cmc": 13.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o13"
-      ]
+      "gatherer_alternates": ["o13"]
     },
     {
       "object": "card_symbol",
@@ -478,9 +442,7 @@
       "cmc": 14.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o14"
-      ]
+      "gatherer_alternates": ["o14"]
     },
     {
       "object": "card_symbol",
@@ -497,9 +459,7 @@
       "cmc": 15.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o15"
-      ]
+      "gatherer_alternates": ["o15"]
     },
     {
       "object": "card_symbol",
@@ -516,9 +476,7 @@
       "cmc": 16.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o16"
-      ]
+      "gatherer_alternates": ["o16"]
     },
     {
       "object": "card_symbol",
@@ -535,9 +493,7 @@
       "cmc": 17.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o17"
-      ]
+      "gatherer_alternates": ["o17"]
     },
     {
       "object": "card_symbol",
@@ -554,9 +510,7 @@
       "cmc": 18.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o18"
-      ]
+      "gatherer_alternates": ["o18"]
     },
     {
       "object": "card_symbol",
@@ -573,9 +527,7 @@
       "cmc": 19.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o19"
-      ]
+      "gatherer_alternates": ["o19"]
     },
     {
       "object": "card_symbol",
@@ -592,9 +544,7 @@
       "cmc": 20.0,
       "funny": false,
       "colors": [],
-      "gatherer_alternates": [
-        "o20"
-      ]
+      "gatherer_alternates": ["o20"]
     },
     {
       "object": "card_symbol",
@@ -661,10 +611,7 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "W",
-        "U"
-      ],
+      "colors": ["W", "U"],
       "gatherer_alternates": null
     },
     {
@@ -681,10 +628,7 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "W",
-        "B"
-      ],
+      "colors": ["W", "B"],
       "gatherer_alternates": null
     },
     {
@@ -701,10 +645,7 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "B",
-        "R"
-      ],
+      "colors": ["B", "R"],
       "gatherer_alternates": null
     },
     {
@@ -721,10 +662,7 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "B",
-        "G"
-      ],
+      "colors": ["B", "G"],
       "gatherer_alternates": null
     },
     {
@@ -741,10 +679,7 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "U",
-        "B"
-      ],
+      "colors": ["U", "B"],
       "gatherer_alternates": null
     },
     {
@@ -761,10 +696,7 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "U",
-        "R"
-      ],
+      "colors": ["U", "R"],
       "gatherer_alternates": null
     },
     {
@@ -781,10 +713,7 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "R",
-        "G"
-      ],
+      "colors": ["R", "G"],
       "gatherer_alternates": null
     },
     {
@@ -801,10 +730,7 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "W",
-        "R"
-      ],
+      "colors": ["W", "R"],
       "gatherer_alternates": null
     },
     {
@@ -821,10 +747,7 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "W",
-        "G"
-      ],
+      "colors": ["W", "G"],
       "gatherer_alternates": null
     },
     {
@@ -841,10 +764,7 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "U",
-        "G"
-      ],
+      "colors": ["U", "G"],
       "gatherer_alternates": null
     },
     {
@@ -861,10 +781,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "B",
-        "G"
-      ],
+      "colors": ["B", "G"],
       "gatherer_alternates": null
     },
     {
@@ -881,10 +798,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "B",
-        "R"
-      ],
+      "colors": ["B", "R"],
       "gatherer_alternates": null
     },
     {
@@ -901,10 +815,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "U",
-        "G"
-      ],
+      "colors": ["U", "G"],
       "gatherer_alternates": null
     },
     {
@@ -921,10 +832,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "W",
-        "G"
-      ],
+      "colors": ["W", "G"],
       "gatherer_alternates": null
     },
     {
@@ -941,10 +849,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "R",
-        "G"
-      ],
+      "colors": ["R", "G"],
       "gatherer_alternates": null
     },
     {
@@ -961,10 +866,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "W",
-        "R"
-      ],
+      "colors": ["W", "R"],
       "gatherer_alternates": null
     },
     {
@@ -981,10 +883,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "U",
-        "B"
-      ],
+      "colors": ["U", "B"],
       "gatherer_alternates": null
     },
     {
@@ -1001,10 +900,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "U",
-        "R"
-      ],
+      "colors": ["U", "R"],
       "gatherer_alternates": null
     },
     {
@@ -1021,10 +917,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "W",
-        "B"
-      ],
+      "colors": ["W", "B"],
       "gatherer_alternates": null
     },
     {
@@ -1041,10 +934,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "W",
-        "U"
-      ],
+      "colors": ["W", "U"],
       "gatherer_alternates": null
     },
     {
@@ -1061,9 +951,7 @@
       "phyrexian": false,
       "cmc": 2.0,
       "funny": false,
-      "colors": [
-        "W"
-      ],
+      "colors": ["W"],
       "gatherer_alternates": null
     },
     {
@@ -1080,9 +968,7 @@
       "phyrexian": false,
       "cmc": 2.0,
       "funny": false,
-      "colors": [
-        "U"
-      ],
+      "colors": ["U"],
       "gatherer_alternates": null
     },
     {
@@ -1099,9 +985,7 @@
       "phyrexian": false,
       "cmc": 2.0,
       "funny": false,
-      "colors": [
-        "B"
-      ],
+      "colors": ["B"],
       "gatherer_alternates": null
     },
     {
@@ -1118,9 +1002,7 @@
       "phyrexian": false,
       "cmc": 2.0,
       "funny": false,
-      "colors": [
-        "R"
-      ],
+      "colors": ["R"],
       "gatherer_alternates": null
     },
     {
@@ -1137,9 +1019,7 @@
       "phyrexian": false,
       "cmc": 2.0,
       "funny": false,
-      "colors": [
-        "G"
-      ],
+      "colors": ["G"],
       "gatherer_alternates": null
     },
     {
@@ -1173,9 +1053,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "W"
-      ],
+      "colors": ["W"],
       "gatherer_alternates": null
     },
     {
@@ -1192,9 +1070,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "U"
-      ],
+      "colors": ["U"],
       "gatherer_alternates": null
     },
     {
@@ -1211,9 +1087,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "B"
-      ],
+      "colors": ["B"],
       "gatherer_alternates": null
     },
     {
@@ -1230,9 +1104,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "R"
-      ],
+      "colors": ["R"],
       "gatherer_alternates": null
     },
     {
@@ -1249,9 +1121,7 @@
       "phyrexian": true,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "G"
-      ],
+      "colors": ["G"],
       "gatherer_alternates": null
     },
     {
@@ -1268,9 +1138,7 @@
       "phyrexian": false,
       "cmc": 0.5,
       "funny": true,
-      "colors": [
-        "W"
-      ],
+      "colors": ["W"],
       "gatherer_alternates": null
     },
     {
@@ -1287,9 +1155,7 @@
       "phyrexian": false,
       "cmc": 0.5,
       "funny": true,
-      "colors": [
-        "R"
-      ],
+      "colors": ["R"],
       "gatherer_alternates": null
     },
     {
@@ -1306,13 +1172,8 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "W"
-      ],
-      "gatherer_alternates": [
-        "oW",
-        "ooW"
-      ]
+      "colors": ["W"],
+      "gatherer_alternates": ["oW", "ooW"]
     },
     {
       "object": "card_symbol",
@@ -1328,13 +1189,8 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "U"
-      ],
-      "gatherer_alternates": [
-        "oU",
-        "ooU"
-      ]
+      "colors": ["U"],
+      "gatherer_alternates": ["oU", "ooU"]
     },
     {
       "object": "card_symbol",
@@ -1350,13 +1206,8 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "B"
-      ],
-      "gatherer_alternates": [
-        "oB",
-        "ooB"
-      ]
+      "colors": ["B"],
+      "gatherer_alternates": ["oB", "ooB"]
     },
     {
       "object": "card_symbol",
@@ -1372,13 +1223,8 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "R"
-      ],
-      "gatherer_alternates": [
-        "oR",
-        "ooR"
-      ]
+      "colors": ["R"],
+      "gatherer_alternates": ["oR", "ooR"]
     },
     {
       "object": "card_symbol",
@@ -1394,13 +1240,8 @@
       "phyrexian": false,
       "cmc": 1.0,
       "funny": false,
-      "colors": [
-        "G"
-      ],
-      "gatherer_alternates": [
-        "oG",
-        "ooG"
-      ]
+      "colors": ["G"],
+      "gatherer_alternates": ["oG", "ooG"]
     },
     {
       "object": "card_symbol",

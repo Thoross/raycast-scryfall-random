@@ -15,13 +15,14 @@ export interface TransformProps {
 
 const Transform = ({ card, isLoading }: TransformProps) => {
   const symbols = getSymbols()
+  const renderCardNameMarkdown = generateCardNameMarkdown(symbols)
   let markdown
   if (card) {
     const [front, back] = card.card_faces
     markdown = `
   ${generateImageMarkdown(front.name, front.image_uris.normal)}
 
-  ${generateCardNameMarkdown(symbols, front)}
+  ${renderCardNameMarkdown(front)}
   ### ${front.type_line}
 
   ${generateBottomRightDetails(front)}
@@ -32,7 +33,7 @@ const Transform = ({ card, isLoading }: TransformProps) => {
 
   ${generateImageMarkdown(back.name, back.image_uris.normal)}
 
-  ${generateCardNameMarkdown(symbols, back)}
+  ${renderCardNameMarkdown(back)}
   ### ${back.type_line}
 
   ${generateBottomRightDetails(back)}

@@ -34,3 +34,19 @@ export const isAdventure = (card: ScryfallCard.Any | undefined): card is Scryfal
 
   return card.layout === 'adventure'
 }
+
+export const isFlip = (card: ScryfallCard.Any | undefined): card is ScryfallCard.Flip => {
+  if (!card) {
+    return false
+  }
+
+  return card.layout === 'flip'
+}
+
+export const isVanguard = (card: ScryfallCard.Any | undefined): card is ScryfallCard.Vanguard => {
+  if (!card) {
+    return false
+  }
+
+  return card.layout === 'vanguard'
+}
