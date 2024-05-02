@@ -39,7 +39,7 @@ const Adventure = ({ card, isLoading }: AdventureProps) => {
 
   ${adventure.oracle_text ? formatOracleText(adventure.oracle_text) : ''}
 
-  ${generateFlavorText(adventure)}
+  ${generateFlavorText(adventure, true)}
     `
   }
   return <Base card={card} isLoading={isLoading} markdown={markdown} />

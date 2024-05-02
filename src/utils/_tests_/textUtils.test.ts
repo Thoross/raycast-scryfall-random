@@ -1,14 +1,23 @@
 import { expect, describe, it } from 'vitest'
 import {
+  formatOracleText,
   generateBottomRightDetails,
   generateCardNameMarkdown,
   generateFlavorText,
   generateImageMarkdown,
   replaceNewlines,
   replaceSymbols,
-} from './textUtils'
-import { cardStub, normalCard } from './fixtures'
-import { ScryfallCard, ScryfallColor, ScryfallLayout } from '@scryfall/api-types'
+} from '../textUtils'
+import { normalCard } from '../../fixtures'
+
+describe('formatOracleText', () => {
+  it('returns nothing if oracle text is undefined', () => {
+    expect(formatOracleText(undefined)).toBeUndefined()
+  })
+  it('returns markdown of the oracle text', () => {
+    expect(formatOracleText('This is oracle text')).toContain('This is oracle text')
+  })
+})
 
 describe('replaceNewlines', () => {
   it('replaces newlines in strings', () => {
@@ -107,10 +116,14 @@ describe('generateCardNameMarkdown', () => {
 describe('generateFlavorText', () => {
   it('generates flavour text', () => {
     const test = { ...normalCard, flavor_text: 'This is flavor text' }
-    expect(generateFlavorText(test)).toEqual('*This is flavor text*')
+    expect(generateFlavorText(test)).toContain('*This is flavor text*')
   })
   it('returns an empty string when no flavor_text', () => {
     const test = { ...normalCard, flavor_text: undefined }
     expect(generateFlavorText(test)).toEqual('')
+  })
+  it('returns an hr when the flag is passed', () => {
+    const test = { ...normalCard, flavor_text: 'This is flavor text' }
+    expect(generateFlavorText(test, true)).toContain('----')
   })
 })

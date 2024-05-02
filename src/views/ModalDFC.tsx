@@ -43,7 +43,7 @@ const ModalDFC = ({ card, isLoading }: ModalDFCProps) => {
 
   ${back.oracle_text && formatOracleText(back.oracle_text)}
 
-  ${generateFlavorText(back)}
+  ${generateFlavorText(back, true)}
     `
   }
 

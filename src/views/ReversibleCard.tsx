@@ -9,12 +9,12 @@ import {
 } from '../utils/textUtils'
 import { getSymbols } from '../utils/symbology'
 
-export interface TransformProps {
-  card: ScryfallCard.Transform
+export interface ReversibleProps {
+  card: ScryfallCard.ReversibleCard
   isLoading: boolean
 }
 
-const Transform = ({ card, isLoading }: TransformProps) => {
+const Reversible = ({ card, isLoading }: ReversibleProps) => {
   const symbols = getSymbols()
   const renderCardNameMarkdown = generateCardNameMarkdown(symbols)
   let markdown
@@ -49,4 +49,4 @@ const Transform = ({ card, isLoading }: TransformProps) => {
   return <Base isLoading={isLoading} card={card} markdown={markdown} />
 }
 
-export default Transform
+export default Reversible

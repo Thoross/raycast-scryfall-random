@@ -50,3 +50,16 @@ export const isVanguard = (card: ScryfallCard.Any | undefined): card is Scryfall
 
   return card.layout === 'vanguard'
 }
+
+export const isReversible = (card: ScryfallCard.Any | undefined): card is ScryfallCard.ReversibleCard => {
+  if (!card) {
+    return false
+  }
+  return card.layout === 'reversible_card'
+}
+export const isArtSeries = (card: ScryfallCard.Any | undefined): card is ScryfallCard.ArtSeries => {
+  if (!card) {
+    return false
+  }
+  return card.layout === 'art_series'
+}

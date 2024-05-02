@@ -1,8 +1,18 @@
 import { describe, it, expect } from 'vitest'
 
-import { isAdventure, isCard, isFlip, isMDFC, isSplit, isTransform, isVanguard } from './type-guards'
+import {
+  isAdventure,
+  isArtSeries,
+  isCard,
+  isFlip,
+  isMDFC,
+  isReversible,
+  isSplit,
+  isTransform,
+  isVanguard,
+} from '../type-guards'
 import { ScryfallLayout } from '@scryfall/api-types'
-import { cardStub, error } from './fixtures'
+import { cardStub, error } from '../../fixtures'
 
 describe('isAdventure', () => {
   it('returns true when is adventure card', () => {
@@ -18,6 +28,9 @@ describe('isAdventure', () => {
       layout: 'flip' as ScryfallLayout.ArtSeries,
     }
     expect(isAdventure(card)).toBeFalsy()
+  })
+  it('returns false if card is undefined', () => {
+    expect(isAdventure(undefined)).toBeFalsy()
   })
 })
 
@@ -43,6 +56,9 @@ describe('isSplit', () => {
     }
     expect(isSplit(card)).toBeFalsy()
   })
+  it('returns false if card is undefined', () => {
+    expect(isSplit(undefined)).toBeFalsy()
+  })
 })
 
 describe('isMDFC', () => {
@@ -56,6 +72,9 @@ describe('isMDFC', () => {
       layout: 'adventure' as ScryfallLayout.Adventure,
     }
     expect(isMDFC(card)).toBeFalsy()
+  })
+  it('returns false if card is undefined', () => {
+    expect(isMDFC(undefined)).toBeFalsy()
   })
 })
 
@@ -71,6 +90,9 @@ describe('isTransform', () => {
     }
     expect(isTransform(card)).toBeFalsy()
   })
+  it('returns false if card is undefined', () => {
+    expect(isTransform(undefined)).toBeFalsy()
+  })
 })
 
 describe('isFlip', () => {
@@ -84,6 +106,9 @@ describe('isFlip', () => {
       layout: 'adventure' as ScryfallLayout.Adventure,
     }
     expect(isFlip(card)).toBeFalsy()
+  })
+  it('returns false if card is undefined', () => {
+    expect(isFlip(undefined)).toBeFalsy()
   })
 })
 
@@ -104,5 +129,48 @@ describe('isVanguard', () => {
       layout: 'adventure' as ScryfallLayout.Adventure,
     }
     expect(isVanguard(card)).toBeFalsy()
+  })
+  it('returns false if card is undefined', () => {
+    expect(isVanguard(undefined)).toBeFalsy()
+  })
+})
+
+describe('isArtSeries', () => {
+  it('returns true when card is an art card', () => {
+    const card = {
+      ...cardStub,
+      layout: 'art_series' as ScryfallLayout.ArtSeries,
+    }
+    expect(isArtSeries(card)).toBeTruthy()
+  })
+  it("doesn't match another type", () => {
+    const card = {
+      ...cardStub,
+      layout: 'adventure' as ScryfallLayout.Adventure,
+    }
+    expect(isArtSeries(card)).toBeFalsy()
+  })
+  it('returns false if card is undefined', () => {
+    expect(isArtSeries(undefined)).toBeFalsy()
+  })
+})
+
+describe('isReversible', () => {
+  it('returns true when a card is a reversible card', () => {
+    const card = {
+      ...cardStub,
+      layout: 'reversible_card' as ScryfallLayout.ReversibleCard,
+    }
+    expect(isReversible(card)).toBeTruthy()
+  })
+  it("doesn't match another type", () => {
+    const card = {
+      ...cardStub,
+      layout: 'adventure' as ScryfallLayout.Adventure,
+    }
+    expect(isReversible(card)).toBeFalsy()
+  })
+  it('returns false if card is undefined', () => {
+    expect(isReversible(undefined)).toBeFalsy()
   })
 })

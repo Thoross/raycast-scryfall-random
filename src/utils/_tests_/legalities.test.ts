@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { getColour } from './legalities'
+import { getColour } from '../legalities'
 
 describe('getColour', () => {
   it('returns an empty string for not_legal', () => {

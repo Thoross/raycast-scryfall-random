@@ -49,9 +49,13 @@ ${card.power && card.toughness ? `${card.power}/${card.toughness}` : ''}
 ${card.loyalty ? `Loyalty: ${card.loyalty}` : ''}
 `
 
-export const generateFlavorText = (card: ScryfallCardFace.Any | ScryfallCard.AnySingleFaced) => {
+export const generateFlavorText = (card: ScryfallCardFace.Any | ScryfallCard.AnySingleFaced, renderHr?: boolean) => {
   if (!card.flavor_text) {
     return ''
   }
-  return `*${card.flavor_text}*`
+  return `
+  ${renderHr ? '----' : ''}
+
+  *${card.flavor_text}*
+  `
 }
